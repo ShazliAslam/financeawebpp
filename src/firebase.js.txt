@@ -1,0 +1,18 @@
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDmgYbIx0DiDKQ4FuAIpT_Lt0O40emhaXU",
+  authDomain: "finance-48045.firebaseapp.com",
+  projectId: "finance-48045",
+  storageBucket: "finance-48045.firebasestorage.app",
+  messagingSenderId: "975691293051",
+  appId: "1:975691293051:web:1760daecea4ba4ba789dde"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+export const auth = getAuth(app);
+export const db = getFirestore(app);
